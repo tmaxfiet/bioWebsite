@@ -1,0 +1,12 @@
+#home-component {
+    padding-top: 250px;
+    padding-bottom: 100px;
+    margin-top: 0px !important;
+}
+
+#home-description {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}

@@ -1,0 +1,11 @@
+#contact-form-container {
+    padding-top: 20px;
+    background-color: yellow;
+}
+
+#contact {
+    background-color: lightgray;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
