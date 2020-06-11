@@ -2,6 +2,9 @@ import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './NavBarComponent.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 
 class NavBarComponent extends React.Component {
     constructor(props) {
@@ -48,6 +51,14 @@ class NavBarComponent extends React.Component {
             <Navbar id={this.state.scrollTop > 70 ? 'navbar-main-scrolled' : 'navbar-main'} 
                 className={this.state.width > 768 ? 'navbar-reg': 'navbar-small'} expand="lg" fixed="top">
                 <Navbar.Brand id="navbar-title" href="/"> {this.props.brand} </Navbar.Brand>
+                <div id="nav-icons">
+                    <a className="icon-link" href="https://linkedin.com/in/taylormaxfield">
+                        <FontAwesomeIcon className="nav-icon" icon={faLinkedin} size="3x" />
+                    </a>
+                    <a className="icon-link" href="https://github.com/tmaxfiet">
+                        <FontAwesomeIcon className="nav-icon" icon={faGithubSquare} size="3x" />
+                    </a>
+                </div>
                 <Navbar.Toggle aria-controls="navbar-toggle" />
                 <Navbar.Collapse id="navbar-collapse">
                     <Nav id="navbar-nav">
