@@ -8,13 +8,11 @@ class PhotoJumbtron extends React.Component {
         if (this.props.background) {
             return (
                 <Jumbotron id="photo-jumbotron" style={{ backgroundImage: `url("${this.props.background}")` }}>
-                    <h1 id="photo-jumbotron-header" className="photo-jumbotron-text"> Welcome to my humble website! </h1>
+                    <h1 id="photo-jumbotron-header" className="photo-jumbotron-text"> Developer &nbsp;|&nbsp;  Coder  &nbsp;|&nbsp;  Tech Enthusiast </h1>
                     <h4 id="photo-jumbotron-description" className="photo-jumbotron-text">
-                        This is a bio website to highlight my skillset, some projects I have been working on, 
-                        and contact information for yours truly. Stay awhile; enjoy messing around with the website.
-                        Please <a href="#contact"> reach out </a> if you are interesting in connecting to 
-                        create something together.
-
+                        I am a full-stack developer with a passion for creating intuitive yet lasting experiences.
+                        Interested in connecting? Feel free to reach out on LinkedIn, Github, or 
+                        through the <a href="#contact"> message section</a>!
                     </h4>
                 </Jumbotron>
             )

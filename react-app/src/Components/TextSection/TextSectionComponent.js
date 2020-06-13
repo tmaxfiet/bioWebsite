@@ -1,12 +1,12 @@
 import React from 'react';
-import './HomeComponent.css';
+import './TextSectionComponent.css';
 
-class HomeComponent extends React.Component {
+class TextSectionComponent extends React.Component {
     render() {
         return (
-            <div id="home-component">
-                <h1 id="home-header" > Welcome to my humble website! </h1>
-                <p id="home-description">
+            <div id="text-section-component">
+                <h1 id="text-section-header" > Welcome to my humble website! </h1>
+                <p id="text-section-description">
                     This is a bio website to highlight my skillset, some projects I have been working on, 
                     and contact information for yours truly. Stay awhile; enjoy messing around with the website.
                     Please <a href="#contact"> reach out </a> if you are interesting in connecting to 
@@ -17,4 +17,4 @@ class HomeComponent extends React.Component {
     }
 }
 
-export default HomeComponent;
+export default TextSectionComponent;

@@ -5,9 +5,9 @@ import './App.css';
 /* My components */
 import NavBarComponent from './Components/Navbar/NavBarComponent';
 import PhotoJumbtron from './Components/PhotoJumbotron/PhotoJumbotron';
-import ProjectCarousel from './Components/ProjectCarousel/ProjectCarousel';
+import ProjectComponent from './Components/Project/ProjectComponent';
 import ContactFormComponent from './Components/ContactForm/ContactFormComponent';
-import HomeComponent from './Components/Home/HomeComponent';
+import TextSectionComponent from './Components/TextSection/TextSectionComponent';
 
 function App() {
   return (
@@ -15,13 +15,14 @@ function App() {
       <div>
         <NavBarComponent brand="Taylor Maxfield"></NavBarComponent>
       </div>
-      <div id="home"></div>
-        <HomeComponent></HomeComponent>
+      <div id="home">
+        <PhotoJumbtron background="/home-office.jpg"> </PhotoJumbtron>
+      </div>
       <div id="about">
-        <PhotoJumbtron id="about" background="/home-office.jpg"> </PhotoJumbtron>
+        <TextSectionComponent></TextSectionComponent>
       </div>
       <div id="projects">
-        <ProjectCarousel id="projects"></ProjectCarousel>
+        <ProjectComponent></ProjectComponent>
       </div>
       <div id="contact">
         <ContactFormComponent></ContactFormComponent>
