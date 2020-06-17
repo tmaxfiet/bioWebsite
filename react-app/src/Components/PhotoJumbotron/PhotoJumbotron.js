@@ -2,17 +2,38 @@ import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import './PhotoJumbotron.css';
 
-class PhotoJumbtron extends React.Component {
+class PhotoJumbtron extends React.Component {    
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            titleText: '',
+            titleArrayIndex: 0,
+            titleTextFull: 'Developer | Coder | Tech Enthusiast',
+        }
+    }
+
+    componentDidMount() {
+        var intervalTimer = setInterval( () => {
+            this.setState({
+                titleText: this.state.titleText + this.state.titleTextFull.charAt(this.state.titleArrayIndex),
+                titleArrayIndex: this.state.titleArrayIndex + 1,
+            });
+            if(this.state.titleArrayIndex === this.state.titleTextFull.length) {
+                clearInterval(intervalTimer);
+            }
+        }, 100);
+    }
 
     render() {
         if (this.props.background) {
             return (
                 <Jumbotron id="photo-jumbotron" style={{ backgroundImage: `url("${this.props.background}")` }}>
-                    <h1 id="photo-jumbotron-header" className="photo-jumbotron-text"> Developer &nbsp;|&nbsp;  Coder  &nbsp;|&nbsp;  Tech Enthusiast </h1>
+                    <h1 id="photo-jumbotron-header" className="photo-jumbotron-text"> {this.state.titleText} </h1>
                     <h4 id="photo-jumbotron-description" className="photo-jumbotron-text">
                         I am a full-stack developer with a passion for creating intuitive yet lasting experiences.
                         Interested in connecting? Feel free to reach out on LinkedIn, Github, or 
-                        through the <a href="#contact"> message section</a>!
+                        through the <a id="contact-link" href="#contact"> message section</a>!
                     </h4>
                 </Jumbotron>
             )

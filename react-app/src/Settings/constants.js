@@ -6,3 +6,5 @@ export const secondProjectDescription = 'Second Project Description';
 
 export const thirdProjectName = 'Study Noise';
 export const thirdProjectDescription = 'Third Project Description';
+
+export const photoJumbtronPath = '/black-wood.jpg';
