@@ -1,20 +1,22 @@
 #project-component {
-    background-color: black;
+    background-color: lightgray;
 }
 
 #project-carousel {
-    background-color: black;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .project-card-container {
-    background-color: yellow;
     max-width: 700px;
     height: 700px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.carousel-img {
+    height: 400px;
 }
 
 .alert-enter {
@@ -36,4 +38,97 @@
     opacity: 0;
     transform: scale(0.9);
     transition: opacity 300ms, transform 300ms;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    z-index: 13;
+}
+
+.carousel-item-banner {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    z-index: 12;
+}
+
+.carousel-item-banner:hover {
+    opacity: 1;
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+    .view-project-teaser {
+        position: relative;
+        top: 0%;
+        color: white;
+        transition: top 0.5s ease-out;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .view-project-teaser {
+        position: relative;
+        top: 15%;
+        color: white;
+        transition: top 0.5s ease-out;
+    }
+}
+
+@media only screen and (max-width: 699px) {
+    .carousel-item-banner:hover .view-project-teaser {
+        top: 200%;
+    }
+}
+
+@media only screen and (max-width: 699px) {
+    .carousel-item-banner:hover .view-project-teaser {
+        top: 100%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .carousel-item-banner:hover .view-project-teaser {
+        top: 250%;
+    }
+}
+
+.view-project-col {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.view-project-button {
+    position: relative;
+    margin-top: 40%;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    border: 3px solid white;
+    padding: 10px 25px 10px 25px;
+    transition: margin-top 0.5s ease-out, background-color 0.25s ease-in;
+}
+
+.view-project-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.carousel-item-banner:hover .view-project-button {
+    margin-top: 20%;
+}
+
+@media only screen and (max-width: 520px) {
+    .carousel-item-banner:hover .view-project-button {
+        margin-top: 30%;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    .carousel-item-banner:hover .view-project-button {
+        margin-top: 40%;
+    }
 }

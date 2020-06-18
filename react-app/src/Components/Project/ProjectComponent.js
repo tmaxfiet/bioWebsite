@@ -2,9 +2,13 @@ import React from 'react';
 import './ProjectComponent.css';
 import ProjectCard from '../ProjectCard/ProjectCard';
 
-import { SwitchTransition, CSSTransition } from 'react-transition-group';
+import { CSSTransition } from 'react-transition-group';
 
 import Carousel from 'react-bootstrap/Carousel';
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+
 import GoBackButton from '../GoBackButton/GoBackButton';
 
 // Constants for project text 
@@ -63,40 +67,78 @@ class ProjectComponent extends React.Component {
                 > 
                     <div id="project-carousel-container">
                         <Carousel id="project-carousel">
-                            <Carousel.Item onClick={this.handleFirstProjectClick}>
-                                <img
-                                className="d-block w-100"
-                                src="/logo512.png"
-                                alt="First slide"
-                                />
-                                <Carousel.Caption>
-                                <h3>First slide label</h3>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                </Carousel.Caption>
+                            <Carousel.Item>
+                                <div className="carousel-item-container">
+                                    <img
+                                    className="d-block w-100 carousel-img"
+                                    src="./study-noise-teaser.jpg"
+                                    alt="First slide"
+                                    />
+                                    <Carousel.Caption>
+                                    <h3>Study Noise</h3>
+                                    </Carousel.Caption>
+                                </div>
+                                <div className="carousel-item-banner">
+                                <Container>
+                                    <Row>
+                                        <Col md={6} sm={12} className="view-project-col">
+                                            <div className="view-project-teaser"> 
+                                                A web app that uses Spotify's API to fetch 
+                                                songs and create a tailored visual to each. 
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </Container>
+                                    <button className="view-project-button" 
+                                    onClick={this.handleFirstProjectClick}> View Project </button>
+                                </div>
                             </Carousel.Item>
-                            <Carousel.Item onClick={this.handleSecondProjectClick}>
-                                <img
-                                className="d-block w-100"
-                                src="/logo512.png"
-                                alt="Third slide"
-                                />
+                            <Carousel.Item>
+                                <div className="carousel-item-container">
+                                    <img
+                                    className="d-block w-100 carousel-img"
+                                    src="./book.jpg"
+                                    alt="Third slide"
+                                    />
 
-                                <Carousel.Caption>
-                                <h3>Second slide label</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </Carousel.Caption>
+                                    <Carousel.Caption>
+                                    <h3>Therapy Chatbot</h3>
+                                    </Carousel.Caption>
+                                </div>
+                                <div className="carousel-item-banner">
+                                    <Container>
+                                        <Row>
+                                            <Col md={6} sm={12} className="view-project-col">
+                                                <div className="view-project-teaser"> TEASER TEXT </div>
+                                            </Col>
+                                        </Row>
+                                    </Container>
+                                    <button className="view-project-button" onClick={this.handleSecondProjectClick}> View Project </button>
+                                </div>
                             </Carousel.Item>
-                            <Carousel.Item onClick={this.handleThirdProjectClick}>
-                                <img
-                                className="d-block w-100"
-                                src="/logo512.png"
-                                alt="Third slide"
-                                />
+                            <Carousel.Item>
+                                <div className="carousel-item-container">
+                                    <img
+                                    className="d-block w-100 carousel-img"
+                                    src="/book.jpg"
+                                    alt="Third slide"
+                                    />
 
-                                <Carousel.Caption>
-                                <h3>Third slide label</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                </Carousel.Caption>
+                                    <Carousel.Caption>
+                                    <h3>Ultimate Checkers</h3>
+                                    </Carousel.Caption>
+                                </div>
+                                <div className="carousel-item-banner">
+                                    <Container>
+                                        <Row>
+                                            <Col md={6} sm={12} className="view-project-col">
+                                                <div className="view-project-teaser"> A modern twist on checkers with items and special
+                                            tiles such as sandtraps and bombs! </div>
+                                            </Col>
+                                        </Row>
+                                    </Container>
+                                    <button className="view-project-button" onClick={this.handleThirdProjectClick}> View Project </button>
+                                </div>
                             </Carousel.Item>
                         </Carousel>
                     </div>
