@@ -29,7 +29,6 @@ class ProjectComponent extends React.Component {
     }
 
     handleGoBackProjectClick() {
-        console.log('GO BACk')
         this.setState({
             whichProject: 'None'
         })
@@ -59,11 +58,13 @@ class ProjectComponent extends React.Component {
                 <CSSTransition
                     key='noProject'
                     in={this.state.whichProject === 'None'}
-                    timeout={300}
-                    classNames="alert"
+                    timeout={{
+                        appear: 100,
+                        enter: 100,
+                        exit: 100,
+                    }}
+                    classNames="fade"
                     unmountOnExit
-                    onEnter={() => console.log('enter')}
-                    onExited={() => console.log('exit')}
                 > 
                     <div id="project-carousel-container">
                         <Carousel id="project-carousel">
@@ -75,7 +76,7 @@ class ProjectComponent extends React.Component {
                                     alt="First slide"
                                     />
                                     <Carousel.Caption>
-                                    <h3>Study Noise</h3>
+                                    <h3>{CONSTANTS.firstProjectName}</h3>
                                     </Carousel.Caption>
                                 </div>
                                 <div className="carousel-item-banner">
@@ -83,8 +84,7 @@ class ProjectComponent extends React.Component {
                                     <Row>
                                         <Col md={6} sm={12} className="view-project-col">
                                             <div className="view-project-teaser"> 
-                                                A web app that uses Spotify's API to fetch 
-                                                songs and create a tailored visual to each. 
+                                                {CONSTANTS.firstProjectTeaser}
                                             </div>
                                         </Col>
                                     </Row>
@@ -97,19 +97,21 @@ class ProjectComponent extends React.Component {
                                 <div className="carousel-item-container">
                                     <img
                                     className="d-block w-100 carousel-img"
-                                    src="./book.jpg"
+                                    src="./chatbot-pet.jpg"
                                     alt="Third slide"
                                     />
 
                                     <Carousel.Caption>
-                                    <h3>Therapy Chatbot</h3>
+                                    <h3>{CONSTANTS.secondProjectName}</h3>
                                     </Carousel.Caption>
                                 </div>
                                 <div className="carousel-item-banner">
                                     <Container>
                                         <Row>
                                             <Col md={6} sm={12} className="view-project-col">
-                                                <div className="view-project-teaser"> TEASER TEXT </div>
+                                                <div className="view-project-teaser"> 
+                                                    {CONSTANTS.secondProjectTeaser} 
+                                                </div>
                                             </Col>
                                         </Row>
                                     </Container>
@@ -120,20 +122,21 @@ class ProjectComponent extends React.Component {
                                 <div className="carousel-item-container">
                                     <img
                                     className="d-block w-100 carousel-img"
-                                    src="/book.jpg"
+                                    src="/checkers.jpg"
                                     alt="Third slide"
                                     />
 
                                     <Carousel.Caption>
-                                    <h3>Ultimate Checkers</h3>
+                                    <h3>{CONSTANTS.thirdProjectName}</h3>
                                     </Carousel.Caption>
                                 </div>
                                 <div className="carousel-item-banner">
                                     <Container>
                                         <Row>
                                             <Col md={6} sm={12} className="view-project-col">
-                                                <div className="view-project-teaser"> A modern twist on checkers with items and special
-                                            tiles such as sandtraps and bombs! </div>
+                                                <div className="view-project-teaser"> 
+                                                     {CONSTANTS.thirdProjectTeaser}
+                                                </div>
                                             </Col>
                                         </Row>
                                     </Container>
@@ -146,11 +149,13 @@ class ProjectComponent extends React.Component {
                 <CSSTransition
                     key='firstProject'
                     in={this.state.whichProject === 'First'}
-                    timeout={300}
-                    classNames="alert"
+                    timeout={{
+                        appear: 100,
+                        enter: 100,
+                        exit: 100,
+                    }}
+                    classNames="fade"
                     unmountOnExit
-                    onEnter={() => console.log('enter')}
-                    onExited={() => console.log('exit')}
                 >
                     <div className="project-card-container" onClick={this.handleGoBackProjectClick}>
                         <GoBackButton></GoBackButton>
@@ -160,11 +165,13 @@ class ProjectComponent extends React.Component {
                 <CSSTransition
                     key='secondProject'
                     in={this.state.whichProject === 'Second'}
-                    timeout={300}
-                    classNames="alert"
+                    timeout={{
+                        appear: 100,
+                        enter: 100,
+                        exit: 100,
+                    }}
+                    classNames="fade"
                     unmountOnExit
-                    onEnter={() => console.log('enter')}
-                    onExited={() => console.log('exit')}
                 >
                     <div className="project-card-container" onClick={this.handleGoBackProjectClick}>
                         <GoBackButton ></GoBackButton>
@@ -174,11 +181,13 @@ class ProjectComponent extends React.Component {
                 <CSSTransition
                     key='thirdProject'
                     in={this.state.whichProject === 'Third'}
-                    timeout={300}
-                    classNames="alert"
+                    timeout={{
+                        appear: 100,
+                        enter: 100,
+                        exit: 100,
+                    }}
+                    classNames="fade"
                     unmountOnExit
-                    onEnter={() => console.log('enter')}
-                    onExited={() => console.log('exit')}
                 >
                     <div className="project-card-container" onClick={this.handleGoBackProjectClick}>
                         <GoBackButton></GoBackButton>

@@ -1,9 +1,13 @@
 :root {
-  --main-bg-color: #f5e4e4b7 ;
+  --main-bg-color: #f5e4e4 ;
   --light-bg-color: gray;
   --light-nav-color: yellow;
   --dark-bg-color: red;
   --dark-nav-color: green;
+}
+
+html, body {
+  background-color: var(--main-bg-color);
 }
 
 .App {
