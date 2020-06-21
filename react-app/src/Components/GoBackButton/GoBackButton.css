@@ -1,0 +1,14 @@
+.go-back-button {
+    height: 30px;
+    width: 100%;
+    background-color: rgba(0, 0, 0);
+    color: white;
+    z-index: 2;
+}
+
+.go-back-button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: ease-in 400ms background-color, ease-in 300ms color;
+}

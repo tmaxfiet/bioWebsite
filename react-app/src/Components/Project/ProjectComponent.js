@@ -29,6 +29,7 @@ class ProjectComponent extends React.Component {
     }
 
     handleGoBackProjectClick() {
+        console.log("HANDLING")
         this.setState({
             whichProject: 'None'
         })
@@ -157,9 +158,12 @@ class ProjectComponent extends React.Component {
                     classNames="fade"
                     unmountOnExit
                 >
-                    <div className="project-card-container" onClick={this.handleGoBackProjectClick}>
-                        <GoBackButton></GoBackButton>
-                        <ProjectCard name={CONSTANTS.firstProjectName} description={CONSTANTS.firstProjectDescription} />
+                    <div className="project-card-container">
+                        <div onClick={this.handleGoBackProjectClick}>
+                            <GoBackButton></GoBackButton>
+                        </div>
+                        <ProjectCard name={CONSTANTS.firstProjectName} description={CONSTANTS.firstProjectDescription}
+                        how={CONSTANTS.firstProjectHow} />
                     </div>
                 </CSSTransition>
                 <CSSTransition
@@ -173,9 +177,12 @@ class ProjectComponent extends React.Component {
                     classNames="fade"
                     unmountOnExit
                 >
-                    <div className="project-card-container" onClick={this.handleGoBackProjectClick}>
-                        <GoBackButton ></GoBackButton>
-                        <ProjectCard name={CONSTANTS.secondProjectName} description={CONSTANTS.secondProjectDescription} />
+                    <div className="project-card-container">
+                        <div onClick={this.handleGoBackProjectClick}>
+                            <GoBackButton></GoBackButton>
+                        </div>
+                        <ProjectCard name={CONSTANTS.secondProjectName} description={CONSTANTS.secondProjectDescription} 
+                        how={CONSTANTS.secondProjectHow} />
                     </div>
                 </CSSTransition>
                 <CSSTransition
@@ -189,9 +196,12 @@ class ProjectComponent extends React.Component {
                     classNames="fade"
                     unmountOnExit
                 >
-                    <div className="project-card-container" onClick={this.handleGoBackProjectClick}>
-                        <GoBackButton></GoBackButton>
-                        <ProjectCard name={CONSTANTS.thirdProjectName} description={CONSTANTS.thirdProjectDescription} />
+                    <div className="project-card-container">
+                        <div onClick={this.handleGoBackProjectClick}>
+                            <GoBackButton></GoBackButton>
+                        </div>
+                        <ProjectCard name={CONSTANTS.thirdProjectName} description={CONSTANTS.thirdProjectDescription} 
+                        how={CONSTANTS.thirdProjectHow} />
                     </div>
                 </CSSTransition>
             </div>

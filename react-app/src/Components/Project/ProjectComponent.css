@@ -1,6 +1,9 @@
 #project-component {
     background-color: lightgray;
-    height: 400px;
+    background-image: url('/fuschia-gradient.jpg');
+    background-size: cover;
+    height: 420px;
+    padding: 10px;
 }
 
 #project-carousel {
