@@ -1,5 +1,6 @@
 {
-  "name": "react-app",
+  "name": "bio-website",
+  "homepage": "https://taylor-maxfield.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
