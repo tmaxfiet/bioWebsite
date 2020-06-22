@@ -8,7 +8,6 @@
 
 .go-back-button:hover {
     cursor: pointer;
-    background-color: white;
-    color: black;
-    transition: ease-in 400ms background-color, ease-in 300ms color;
+    color: gray;
+    transition: ease-in 300ms color;
 }

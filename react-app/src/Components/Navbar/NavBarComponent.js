@@ -49,7 +49,7 @@ class NavBarComponent extends React.Component {
     render() {
         return (
             <Navbar id={this.state.scrollTop > 70 ? 'navbar-main-scrolled' : 'navbar-main'} 
-                className={this.state.width > 768 ? 'navbar-reg': 'navbar-small'} expand="lg" fixed="top">
+                className={this.state.width > 768 ? 'navbar-reg': 'navbar-small'} expand="md" fixed="top">
                 <Navbar.Brand id="navbar-title" href="/"> {this.props.brand} </Navbar.Brand>
                 <div id="nav-icons">
                     <a className="icon-link" href="https://linkedin.com/in/taylormaxfield">

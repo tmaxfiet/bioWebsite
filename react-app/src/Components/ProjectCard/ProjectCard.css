@@ -7,12 +7,30 @@
     height: 370px;
 }
 
+.container-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
 .card {
     height: 100%;
 }
 
+.how-card {
+    background-color: inherit;
+}
+
+.what-card {
+    background-color: inherit;
+}
+
 @media only screen and (max-width: 767px) {
     .what-card {
-        margin-top: 10px;
+        margin-top: 20px;
+        font-size: 0.8rem;
+    }
+
+    .how-card {
+        font-size: 0.8rem;
     }
 }

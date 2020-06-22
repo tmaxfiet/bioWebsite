@@ -1,9 +1,10 @@
 #project-component {
     background-color: lightgray;
-    background-image: url('/fuschia-gradient.jpg');
+    background-image: url('/black-wood.jpg');
     background-size: cover;
-    height: 420px;
-    padding: 10px;
+    background-attachment: fixed;
+    height: 480px;
+    padding: 40px;
 }
 
 #project-carousel {

@@ -1,3 +1,7 @@
+#navbar-title:hover {
+    color: rgba(0, 0, 0, 0.6)
+}
+
 @media only screen and (min-width: 769px) {
     #navbar-main {
         color: black;
@@ -26,6 +30,10 @@
         transition: height 0.5s ease-out;
         border-bottom: 1px solid rgba(240, 230, 220, 0.2);
     }
+
+    #navbar-main-scrolled #navbar-title:hover {
+        color: darkgray
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -40,14 +48,18 @@
     color: white;
 }
 
+#navbar-main-scrolled a:hover {
+    color: darkgray;
+}
+
+.nav-link:hover {
+    color: rgba(0,0,0,.9) !important;
+}
+
 @media only screen and (max-width: 768px) {
     #navbar-main-scrolled a {
         color: black;
     }
-}
-
-#navbar-title:hover {
-    color: rgba(0, 0, 0, 0.6)
 }
 
 #nav-icons {

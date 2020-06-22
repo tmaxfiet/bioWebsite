@@ -10,7 +10,7 @@ class ProjectCard extends React.Component {
     render() {
         return (
             <div className="project-card">
-                <Card border="dark">
+                <Card border="dark" className="container-card">
                     <Card.Header> {this.props.name} </Card.Header>
                     <Card.Body className="project-card-body">
                         <Container className="project-card-flex">

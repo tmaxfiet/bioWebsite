@@ -1,41 +1,17 @@
 import React from 'react';
 import './ContactFormComponent.css';
-import Form from 'react-bootstrap/Form';
 
 class ContactFormComponent extends React.Component {
     render() {
         return (
             <div id="contact-form-container">
-                <Form id="contact">
-                    <Form.Group controlId="exampleForm.ControlInput1">
-                        <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="name@example.com" />
-                    </Form.Group>
-                    <Form.Group controlId="exampleForm.ControlSelect1">
-                        <Form.Label>Example select</Form.Label>
-                        <Form.Control as="select">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </Form.Control>
-                    </Form.Group>
-                    <Form.Group controlId="exampleForm.ControlSelect2">
-                        <Form.Label>Example multiple select</Form.Label>
-                        <Form.Control as="select" multiple>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        </Form.Control>
-                    </Form.Group>
-                    <Form.Group controlId="exampleForm.ControlTextarea1">
-                        <Form.Label>Example textarea</Form.Label>
-                        <Form.Control as="textarea" rows="3" />
-                    </Form.Group>
-                </Form>
+                <div id="contact-title"> Get In Touch </div>
+                <div id="contact-text"> 
+                    Want to connect and discuss a current project need or idea? Interested in learning more
+                    about my projects? Feel free to reach out at
+                    <a id="mail-link" href="mailto:taylorjmaxfield@gmail.com"> taylorjmaxfield@gmail.com</a>! If you are a 
+                    LinkedIn extraordinaire and prefer that platform, please send me a connection request!
+                </div>
             </div>
         )
     }
