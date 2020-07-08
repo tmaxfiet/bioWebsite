@@ -34,3 +34,22 @@
         font-size: 0.8rem;
     }
 }
+
+.view-project-link {
+    bottom: 30px;
+    color: darksalmon;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.view-project-link:hover {
+    color: rgb(238, 49, 58);
+    text-decoration: none;
+    transition: ease-in 500ms color;
+}
+
+@media only screen and (max-width: 360px) {
+    .card-body {
+        padding-top: 0px;
+    }
+}

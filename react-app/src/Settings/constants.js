@@ -4,6 +4,7 @@ export const firstProjectHow = `This project utilized Mongo, Node, Express, and 
 Spotify Web API to fetch playlists, songs, and song data.`;
 export const firstProjectDescription = `The user can choose to play the chosen playlist/song in browser 
 while a visual matches the structure of the currently playing song.`;
+export const firstProjectLink = `study_noise`;
 
 export const secondProjectName = 'Therapy Chatbot';
 export const secondProjectTeaser = 'An adaptive chatbot to assist with children overcoming communication disorders.';

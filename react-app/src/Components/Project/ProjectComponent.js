@@ -91,7 +91,7 @@ class ProjectComponent extends React.Component {
                                     </Row>
                                 </Container>
                                     <button className="view-project-button" 
-                                    onClick={this.handleFirstProjectClick}> View Project </button>
+                                    onClick={this.handleFirstProjectClick}> View Details </button>
                                 </div>
                             </Carousel.Item>
                             <Carousel.Item>
@@ -116,7 +116,7 @@ class ProjectComponent extends React.Component {
                                             </Col>
                                         </Row>
                                     </Container>
-                                    <button className="view-project-button" onClick={this.handleSecondProjectClick}> View Project </button>
+                                    <button className="view-project-button" onClick={this.handleSecondProjectClick}> View Details </button>
                                 </div>
                             </Carousel.Item>
                             <Carousel.Item>
@@ -141,7 +141,7 @@ class ProjectComponent extends React.Component {
                                             </Col>
                                         </Row>
                                     </Container>
-                                    <button className="view-project-button" onClick={this.handleThirdProjectClick}> View Project </button>
+                                    <button className="view-project-button" onClick={this.handleThirdProjectClick}> View Details </button>
                                 </div>
                             </Carousel.Item>
                         </Carousel>
@@ -163,7 +163,7 @@ class ProjectComponent extends React.Component {
                             <GoBackButton></GoBackButton>
                         </div>
                         <ProjectCard name={CONSTANTS.firstProjectName} description={CONSTANTS.firstProjectDescription}
-                        how={CONSTANTS.firstProjectHow} />
+                        how={CONSTANTS.firstProjectHow} link={CONSTANTS.firstProjectLink} />
                     </div>
                 </CSSTransition>
                 <CSSTransition

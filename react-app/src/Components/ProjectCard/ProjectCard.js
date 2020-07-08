@@ -37,6 +37,12 @@ class ProjectCard extends React.Component {
                                 </Col>
                             </Row>
                         </Container>
+                        { this.props.link ? 
+                            <a href={this.props.link} className="view-project-link"> View Project
+                            </a>
+                            : 
+                            null
+                        }
                     </Card.Body>
                 </Card>
             </div>
