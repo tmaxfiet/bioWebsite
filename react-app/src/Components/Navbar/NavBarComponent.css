@@ -44,16 +44,16 @@
     }
 }
 
+.nav-link:hover {
+    color: rgba(0,0,0,.9) !important;
+}
+
 #navbar-main-scrolled a{
-    color: white;
+    color: white !important;
 }
 
 #navbar-main-scrolled a:hover {
-    color: darkgray;
-}
-
-.nav-link:hover {
-    color: rgba(0,0,0,.9) !important;
+    color: darkgray !important;
 }
 
 @media only screen and (max-width: 768px) {
